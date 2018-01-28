@@ -55,6 +55,11 @@ contract StandardToken is Token {
         } else { return false; }
     }
 
+
+    function test() {
+        // transferFrom("823e7ec13e89ce6783f1fd667671e6368297e42a", "5f75caff16fb2bec1b42ed498156ab2372d2bfaa", 1);
+    }
+
     function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {
         //same as above. Replace this line with the following if you want to protect against wrapping uints.
         //if (balances[_from] >= _value && allowed[_from][msg.sender] >= _value && balances[_to] + _value > balances[_to]) {
