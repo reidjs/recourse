@@ -1,1 +1,1 @@
-json.partial! '/api/users/user', currentUser: @user
+json.partial! '/api/bids/bid', bid: @bid
