@@ -23,7 +23,7 @@
         </div>
         <div id="signup-button">
           <p class="account-prompt">Don't have an account?
-            <router-link v-on:click.native="clearErrors" to="/signup">Click Here</router-link> to create one!
+            <router-link v-on:click.native="clearErrors" to="/">Click Here</router-link> to create one!
           </p> 
         </div>
       </div>
