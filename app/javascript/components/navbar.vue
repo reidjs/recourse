@@ -6,10 +6,15 @@
         <a class="navbar-item" href="/">
           <h1 class="logo">Recourse</h1>
         </a>
+         <div class="navbar-item">Hello, CurrentUser</div>
+         <div class="navbar-item">Your Balance: 345 Manna</div>
+         
+      </div>
+       <div class="navbar-end">
           <a class="navbar-item" href="/">
             Add Listing
           </a>
-      </div>
+       </div>
     </nav>
     </div>
   <!-- </div> -->

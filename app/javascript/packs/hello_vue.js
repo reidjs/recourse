@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     render: h => h(App)
   });
 
+
   console.log(app);
 })
 

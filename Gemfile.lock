@@ -41,6 +41,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
+    bcrypt (3.1.11)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.0)
@@ -205,6 +206,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
+=======
+  bcrypt (~> 3.1.7)
+  bloopi (~> 0.2.1)
+>>>>>>> 09a9a227e100df6cc961e87576e80c9c4664cdb9
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)

@@ -5881,6 +5881,10 @@ vue@^2.5.13, vue@^2.5.2:
   version "2.5.13"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.13.tgz#95bd31e20efcf7a7f39239c9aa6787ce8cf578e1"
 
+vuejs-countdown@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/vuejs-countdown/-/vuejs-countdown-0.1.0.tgz#6349ceea54ae04d608ffd8a076aa12f5c82da78a"
+
 vuex@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.0.1.tgz#e761352ebe0af537d4bb755a9b9dc4be3df7efd2"
