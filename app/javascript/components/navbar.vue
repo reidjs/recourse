@@ -1,16 +1,14 @@
 <template >
   <!-- <div v-if="currentUser" class="navbar"> -->
     <div>
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
           <h1 class="logo">Recourse</h1>
         </a>
-        <button class="button navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <a class="navbar-item" href="/">
+            Add Listing
+          </a>
       </div>
     </nav>
     </div>
