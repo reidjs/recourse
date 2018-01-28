@@ -206,11 +206,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-=======
   bcrypt (~> 3.1.7)
   bloopi (~> 0.2.1)
->>>>>>> 09a9a227e100df6cc961e87576e80c9c4664cdb9
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
