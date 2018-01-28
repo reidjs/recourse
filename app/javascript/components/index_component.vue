@@ -46,18 +46,16 @@
     
     computed: {
       listingKeys(){
-        return [1,2,3,4,5,6,7]
-        // return Object.keys(this.$store.state.listings)
+        return Object.keys(this.$store.state.listings)
       },
       listings(){
-        return {1 : "", 2 : "", 3 : "", 4 : "", 5 : "", 6 : "", 7 : ""}
-        // return this.$store.state.listings
+        return this.$store.state.listings
       }
     },
 
-    // created(){
-    //   this.$store.dispatch("getListings")
-    // },
+    created(){
+      this.$store.dispatch("getListings")
+    },
   
     methods:{
       getListing: function(){

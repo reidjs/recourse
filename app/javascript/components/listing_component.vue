@@ -9,22 +9,21 @@
     <div class="media">
       <div class="media-content-bidder">
         <p class="subtitle is-6">High Bidder:</p>
-        <p class="title is-4">Habitat for Humanity</p>
+        <p class="title is-4">need to add</p>
       </div>
       <div class="media-content">
         <p class="subtitle is-6">Listing Owner:</p>
-        <p class="title is-4">Bayview Food Shelf</p>
+        <p class="title is-4">{{listing.lister.organization_name}}</p>
       </div>
     </div>
 
     <div class="content">
-      12 cans of the best green beans north of the border. Come one come all to get
-      these beans. Deals like these won't last long!
+      <span>{{listing.description}}</span>
       <br>
       <br>
       <section class="bid-section">
         <div>
-        <time class="timer-txt">Time Left in Listing:<Countdown class="timer" deadline="January 30, 2018"></Countdown></time>
+        <time class="timer-txt">Time Left in Listing:<Countdown class="timer" v-bind:deadline='listing.end_date'></Countdown></time>
         </div>
         <br>
         <div>
@@ -64,7 +63,7 @@
     },
 
     created(){
-      
+      console.log(this.listingProp)
       
     },
 

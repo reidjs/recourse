@@ -9,6 +9,7 @@ if (window.currentUser) {
 }
 
 
+
 export const store = new Vuex.Store({
   state: {
     listings: {},

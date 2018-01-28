@@ -24,40 +24,40 @@ Listing.create(
   list_name: 'Baby food - 1 pallet',
   description: 'tbd',
   user_id: user_a.id,
-  end_date: Date.tomorrow.noon
+  end_date: "Date.tomorrow.noon"
 )
 
 Listing.create(
   list_name: 'School Supplies - 200 kits',
   description: 'tbd',
   user_id: user_a.id,
-  end_date: Date.tomorrow.noon
+  end_date: "Date.tomorrow.noon"
 )
 
 Listing.create(
   list_name: 'Hygiene Products - 300 kits',
   description: 'tbd',
   user_id: user_b.id,
-  end_date: Date.tomorrow.noon
+  end_date: "Date.tomorrow.noon"
 )
 
 Listing.create(
   list_name: 'Clothing (toddler onesies) - 10',
   description: 'tbd',
   user_id: user_a.id,
-  end_date: Date.tomorrow.noon
+  end_date: "Date.tomorrow.noon"
 )
 
 Listing.create(
   list_name: 'Bedding (single) - 20 sets',
   description: 'tbd',
   user_id: user_b.id,
-  end_date: Date.tomorrow.noon
+  end_date: "Date.tomorrow.noon"
 )
 
 Listing.create(
   list_name: 'Sleeping Bags - 30',
   description: 'tbd',
   user_id: user_b.id,
-  end_date: Date.tomorrow.noon
+  end_date: "Date.tomorrow.noon"
 )
