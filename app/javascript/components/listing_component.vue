@@ -9,7 +9,7 @@
     <div class="media">
       <div class="media-content-bidder">
         <p class="subtitle is-6">High Bidder:</p>
-        <p class="title is-4">need to add</p>
+        <p class="title is-4">{{highBidder}}</p>
       </div>
       <div class="media-content">
         <p class="subtitle is-6">Listing Owner:</p>
@@ -26,16 +26,17 @@
         <time class="timer-txt">Time Left in Listing:<Countdown class="timer" v-bind:deadline='listing.end_date'></Countdown></time>
         </div>
         <br>
+        <span class="current-bid">Current Bid: {{currentBid}} MNA</span>
         <div>
         <b-field>
             <b-select placeholder="Currency">
-                <option>$</option>
-                <option>£</option>
-                <option>€</option>
+                <option>MNA</option>
+                <option></option>
+                <option></option>
             </b-select>
-            <b-input type="number" placeholder="0,00"></b-input>
+            <b-input type="number" v-model="bid" placeholder="0,00"></b-input>
             <p class="control">
-                <button class="button is-success">Bid</button>
+                <button v-on:click="submitBid(bid)"class="button is-success">Bid</button>
             </p>
         </b-field>
         </div>
@@ -58,7 +59,9 @@
       
       return{
         status: true,
-        listing: this.listingProp
+        listing: this.listingProp,
+        currentBid: "0",
+        highBidder: "SF-Marin Food Bank"
       }
     },
 
@@ -68,6 +71,11 @@
     },
 
     methods:{
+
+      submitBid(bid) {
+        this.currentBid = bid;
+        this.highBidder = "Homeless Youth Alliance SF"
+      }
 
   
     },
