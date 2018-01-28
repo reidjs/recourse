@@ -1,6 +1,6 @@
 class Api::ListingsController < ApplicationController
   def index
-    @listings = Listing.all.include(:user).include(:bids).include(:bidders)
+    @listings = Listing.all
     render :index
   end
 
