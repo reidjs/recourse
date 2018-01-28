@@ -3,9 +3,12 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^3.2.1",
+    "axios": "^0.17.1",
     "vue": "^2.5.13",
     "vue-loader": "^13.7.0",
-    "vue-template-compiler": "^2.5.13"
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.13",
+    "vuex": "^3.0.1"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
