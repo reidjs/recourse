@@ -3,9 +3,9 @@ class Bid < ApplicationRecord
 
   belongs_to :listing
 
-  belongs_to :lister,
-             through: :listing,
-             source: :user
+  has_one :lister,
+          through: :listing,
+          source: :user
 
   belongs_to :bidder,
              class_name: :user
