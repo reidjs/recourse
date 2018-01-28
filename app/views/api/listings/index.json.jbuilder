@@ -1,7 +1,7 @@
 json.set! 'listings' do
   @listings.each do |listing|
     json.set! listing.id do
-      json.extract! listing, :id, :list_name, :end_date, :description
+      json.extract! listing, :id, :list_name, :end_date, :description, :list_url
 
       json.set! 'lister' do
         json.extract! listing.user, :organization_name, :id, :public_wallet_key

@@ -39,7 +39,8 @@ export const store = new Vuex.Store({
         user_id: payload.user_id,
         description: payload.description,
         end_date: payload.end_date,
-        start_bid: payload.start_bid
+        start_bid: payload.start_bid,
+        list_url: payload.list_url
       };
       state.listings.unshift(listing); 
     },

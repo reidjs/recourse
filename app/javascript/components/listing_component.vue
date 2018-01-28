@@ -2,7 +2,7 @@
 <div class="card">
   <div class="card-image">
     <figure class="image is-4by3">
-      <img v-attr="src: listing.list_url" alt="Placeholder image">
+      <img v-bind:src="listing.list_url" alt="Placeholder image">
     </figure>
   </div>
   <div class="card-content">
