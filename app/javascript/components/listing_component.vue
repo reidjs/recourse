@@ -23,7 +23,7 @@
       Phasellus nec iaculis mauris. <a>@bulmaio</a>.
       <a href="#">#css</a> <a href="#">#responsive</a>
       <br>
-      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+      <time>Time Left in Listing:<Countdown class="timer" deadline="January 30, 2018"></Countdown></time>
     </div>
   </div>
 </div>
@@ -31,8 +31,10 @@
 
 <script>
   import axios from 'axios';
+  import Countdown from './countdown'
   export default {
     name: 'Listing',
+    components: { Countdown },
     props: ['listingProp'],
 
     
