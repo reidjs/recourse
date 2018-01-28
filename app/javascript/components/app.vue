@@ -1,12 +1,15 @@
 <template>
   <div id="app">
-<transition name="fade" mode="out-in">
+  <transition name="fade" mode="out-in">
     <main class='main-content'>
+      <transition name="fade" mode="out-in">
+        <Navbar></Navbar>
+      </transition>
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
     </main>
-</transition>
+  </transition>
   </div>
 
 </template>
@@ -18,17 +21,23 @@
 
   // import IndexComponent from './components/index_component'
   // import SiteShowComponent from './components/site_show_component';
+  import Navbar from './navbar'
   import LoginForm from './login_form'
   import SignupForm from './signup_form'
   import Vuex from 'vuex';
+  // import Buefy from 'buefy'
+  // import 'buefy/lib/buefy.css'
+
+  // Vue.use(Buefy)
   // import Vuetify from 'vuetify';
-
-
+  
   
   // import('../../app/assets/stylesheets/vuetify.css');
   // Vue.use(Vuetify);
   Vue.use(VueRouter);
   Vue.use(Vuex);
+
+  Vue.use(Buefy.default)
  
 
   const config = {
@@ -91,10 +100,10 @@ router.beforeEach((to, from, next) => {
       return this.$store.getters.session
     }
   },
-  store
-  // components:{
-  //   Sidebar
-  // }
+  store,
+  components:{
+    Navbar
+  }
 }
 
 </script>
