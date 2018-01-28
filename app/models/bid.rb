@@ -11,18 +11,10 @@ class Bid < ApplicationRecord
              class_name: :user
 
   def execute_payment
+    payor_wallet = bidder.wallet
     payee_wallet = lister.wallet
-    bids = Bid
-      .find_by(listing_id: self.listing_id)
-      .sort_by(:amount) { |x, y| y <=> x }
-    bids.each do |b| # likely to go through, so don't use include
-      begin
-        payor_wallet = b.bidder.wallet
-        payor_wallet.pay(payee_wallet)
-        return amount
-      rescue RuntimeError # just move on to the next highest bidder
-      end
-    end
-    raise RuntimeError('Auction failed: no bids cleared.')
+    payor_wallet.pay(payee_wallet)
+    return amount
+  rescue RuntimeError
   end
 end

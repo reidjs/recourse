@@ -1,4 +1,4 @@
-
+require 'bcrypt'
 class User < ApplicationRecord
   validates :organization_name,
             :password_digest,
