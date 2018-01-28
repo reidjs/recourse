@@ -67,7 +67,7 @@ router.beforeEach((to, from, next) => {
 
     if (!store.state.session.currentUser ) {
       next({
-        path: '/signup',
+        path: '/login',
         query: { redirect: to.fullPath }
       })
     } else {
