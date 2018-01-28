@@ -64,7 +64,7 @@ Listing.create(
 
 Listing.create(
   list_name: 'Canned Goods -- 30 cans!',
-  description: 'After a local school drive we had waaaay too many cans left over. Start the bidding',
+  description: 'After a local school drive we had waaaay too many cans left over. Start the bidding.',
   user_id: User.last.id,
   end_date: Date.tomorrow.noon,
   list_url: "http://res.cloudinary.com/dmzulpcul/image/upload/v1517159788/Bags_canned_goods_eehdp7.jpg"
