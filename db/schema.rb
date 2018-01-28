@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180128061810) do
+ActiveRecord::Schema.define(version: 20180128172112) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20180128061810) do
     t.float "min_bid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "list_url"
   end
 
   create_table "users", force: :cascade do |t|

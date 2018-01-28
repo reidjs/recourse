@@ -1,5 +1,5 @@
 class Listing < ApplicationRecord
-  validates :list_name, :user_id, :end_date, presence: true
+  validates :list_name, :user_id, :end_date, :list_url, presence: true
 
   belongs_to :user
 

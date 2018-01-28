@@ -6,7 +6,7 @@
           <h1 class="logo">reCourse</h1>
         </a>
          <div class="navbar-item">Hello, {{currentUser.organization_name}}</div>
-         <div class="navbar-item">Your Balance: <b>&nbsp 345 Manna</b></div>
+         <div class="navbar-item">Your Balance: <b>&nbsp 100 Manna</b></div>
          
       </div>
        <div class="navbar-end">

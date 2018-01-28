@@ -14,7 +14,7 @@ class Api::ListingsController < ApplicationController
   private
 
   def listing_params
-    params.require(:listings).permit(:list_name, :end_date, :user_id, :list_image)
+    params.require(:listings).permit(:list_name, :end_date, :user_id, :list_url)
   end
 
   def schedule_listing_expiration
