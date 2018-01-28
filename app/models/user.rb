@@ -19,6 +19,9 @@ class User < ApplicationRecord
            through: :bids,
            source: :listings
 
+  has_one :wallet,
+          foreign_key: :public_key
+
   attr_reader :password
   after_initialize :ensure_default_values
 
