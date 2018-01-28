@@ -3,13 +3,10 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^3.2.1",
-<<<<<<< HEAD
     "solc": "^0.4.19",
-=======
     "axios": "^0.17.1",
     "buefy": "^0.6.2",
     "css-loader": "^0.28.9",
->>>>>>> 3c621ff10357f5e4cf6c13d09fa6ac9b151e98a6
     "vue": "^2.5.13",
     "vue-loader": "^13.7.0",
     "vue-router": "^3.0.1",
