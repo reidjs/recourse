@@ -46,5 +46,29 @@
 
 .timer-txt {
   font-weight: bolder;
+}
 
+// Login page
+
+#hero-image {
+ position: absolute;
+ width: 1400;
+ height: auto;
+ z-index: -1;
+}
+
+div.login-form {
+  top: 10%;
+  position: absolute;
+  left: 45%;
+}
+div.pw-submit > button.button.is-primary {
+  margin: 10px 0;
+} 
+
+div.login-form > h1 {
+  font-size: 36px;
+}
+div.login-form > h2 {
+  text-align: center;
 }
