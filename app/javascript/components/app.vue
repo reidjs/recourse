@@ -19,7 +19,7 @@
   import VueRouter from 'vue-router';
   // import SessionForm from './components/session_form'
 
-  // import IndexComponent from './components/index_component'
+  import IndexComponent from './index_component'
   // import SiteShowComponent from './components/site_show_component';
   import Navbar from './navbar'
   import LoginForm from './login_form'
@@ -54,7 +54,9 @@
     { path: '/', component: SignupForm, meta: { requiresUnAuth: true} },
     // { path: '/', component: IndexComponent,meta: { requiresAuth: true }},
     { path: '/login', component: LoginForm, meta: { requiresUnAuth: true} },
-    { path: '/signup', component: SignupForm, meta: { requiresUnAuth: true} }
+    { path: '/signup', component: SignupForm, meta: { requiresUnAuth: true} },
+    { path: '/show', component: IndexComponent,meta: { requiresUnAuth: true }}
+
 ]
 
   const router = new VueRouter({
