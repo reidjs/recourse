@@ -8,8 +8,8 @@
         </li>
       </ul>
       <div class="form-name form">
-        <label class="label-username">Orginization Name </label>
-        <input type="text" v-on:keyup="clearErrors" @keydown.enter="login" v-model="user.username">
+        <label class="label-username">Organization Name </label>
+        <input type="text" v-on:keyup="clearErrors" @keydown.enter="login" v-model="user.organization_name">
       </div>
       <div class="form-password form">
         <label class="label-password">Password </label>
@@ -35,7 +35,7 @@
     data() {
       return{
         user: {
-          username: '',
+          organization_name: '',
           password: ''
         }
       }
@@ -49,18 +49,8 @@
       login: function() {
         let user = {
           "user": {
-            "username": this.user.username,
+            "organization_name": this.user.organization_name,
             "password": this.user.password
-          } 
-        }
-        this.$store.dispatch('logCurrentUserIn',user).then( ()=>{
-        this.$router.push('/')})
-      },
-      loginDemoUser: function() {
-        let user = {
-          "user": {
-            "username": 'DemoUser',
-            "password": 'asdfasdf'
           } 
         }
         this.$store.dispatch('logCurrentUserIn',user).then( ()=>{

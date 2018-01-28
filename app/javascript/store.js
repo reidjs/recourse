@@ -26,7 +26,7 @@ export const store = new Vuex.Store({
     ADD_CURRENT_USER (state, payload) {
       const currentUser = {
         id: payload.id,
-        username: payload.username
+        organization_name: payload.organization_name
       };
       state.session.currentUser = currentUser;
     },
